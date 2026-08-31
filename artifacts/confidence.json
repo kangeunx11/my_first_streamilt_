@@ -1,0 +1,16 @@
+{
+  "threshold": 0.63,
+  "selection_rule": "validation accuracy >= 90% with at least 20 accepted images",
+  "validation": {
+    "coverage": 0.7916666666666666,
+    "accepted": 95,
+    "total": 120,
+    "accuracy_when_accepted": 0.9052631578947369
+  },
+  "test": {
+    "coverage": 0.7666666666666667,
+    "accepted": 92,
+    "total": 120,
+    "accuracy_when_accepted": 0.8804347826086957
+  }
+}

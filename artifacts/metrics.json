@@ -1,0 +1,273 @@
+{
+  "model": "efficientnet_b0 transfer learning (upper backbone fine-tuned)",
+  "pretrained": true,
+  "device": "cpu",
+  "seed": 42,
+  "class_names": [
+    "밥",
+    "국",
+    "반찬",
+    "후식"
+  ],
+  "source_rows": 800,
+  "split_counts": {
+    "train": 560,
+    "validation": 120,
+    "test": 120
+  },
+  "split_class_counts": {
+    "train": {
+      "반찬": 140,
+      "밥": 140,
+      "국": 141,
+      "후식": 139
+    },
+    "validation": {
+      "국": 30,
+      "후식": 30,
+      "반찬": 30,
+      "밥": 30
+    },
+    "test": {
+      "밥": 30,
+      "국": 30,
+      "후식": 30,
+      "반찬": 30
+    }
+  },
+  "best_validation_accuracy": 0.825,
+  "best_validation_loss": 0.555768,
+  "test_loss": 0.51988,
+  "test_accuracy": 0.816667,
+  "training_seconds": 558.92,
+  "history": [
+    {
+      "stage": "classifier_head",
+      "epoch": 1,
+      "train_loss": 0.962739,
+      "train_accuracy": 0.666071,
+      "validation_loss": 0.715235,
+      "validation_accuracy": 0.791667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 2,
+      "train_loss": 0.602931,
+      "train_accuracy": 0.8,
+      "validation_loss": 0.624229,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 3,
+      "train_loss": 0.497581,
+      "train_accuracy": 0.855357,
+      "validation_loss": 0.596856,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 4,
+      "train_loss": 0.449611,
+      "train_accuracy": 0.85,
+      "validation_loss": 0.580673,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 5,
+      "train_loss": 0.403073,
+      "train_accuracy": 0.880357,
+      "validation_loss": 0.5773,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 6,
+      "train_loss": 0.37661,
+      "train_accuracy": 0.889286,
+      "validation_loss": 0.566984,
+      "validation_accuracy": 0.825
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 7,
+      "train_loss": 0.362616,
+      "train_accuracy": 0.883929,
+      "validation_loss": 0.565191,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 8,
+      "train_loss": 0.342571,
+      "train_accuracy": 0.9,
+      "validation_loss": 0.555408,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 9,
+      "train_loss": 0.313305,
+      "train_accuracy": 0.914286,
+      "validation_loss": 0.564416,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 10,
+      "train_loss": 0.284422,
+      "train_accuracy": 0.908929,
+      "validation_loss": 0.559836,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 11,
+      "train_loss": 0.316824,
+      "train_accuracy": 0.910714,
+      "validation_loss": 0.556436,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "classifier_head",
+      "epoch": 12,
+      "train_loss": 0.281201,
+      "train_accuracy": 0.925,
+      "validation_loss": 0.555768,
+      "validation_accuracy": 0.825
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 1,
+      "train_loss": 0.529524,
+      "train_accuracy": 0.821429,
+      "validation_loss": 0.641681,
+      "validation_accuracy": 0.758333
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 2,
+      "train_loss": 0.355,
+      "train_accuracy": 0.880357,
+      "validation_loss": 0.597115,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 3,
+      "train_loss": 0.324903,
+      "train_accuracy": 0.898214,
+      "validation_loss": 0.598083,
+      "validation_accuracy": 0.808333
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 4,
+      "train_loss": 0.254509,
+      "train_accuracy": 0.923214,
+      "validation_loss": 0.604802,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 5,
+      "train_loss": 0.214015,
+      "train_accuracy": 0.941071,
+      "validation_loss": 0.591352,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 6,
+      "train_loss": 0.231675,
+      "train_accuracy": 0.9375,
+      "validation_loss": 0.576051,
+      "validation_accuracy": 0.825
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 7,
+      "train_loss": 0.189069,
+      "train_accuracy": 0.953571,
+      "validation_loss": 0.586716,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 8,
+      "train_loss": 0.189494,
+      "train_accuracy": 0.942857,
+      "validation_loss": 0.586181,
+      "validation_accuracy": 0.8
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 9,
+      "train_loss": 0.15851,
+      "train_accuracy": 0.9625,
+      "validation_loss": 0.595675,
+      "validation_accuracy": 0.816667
+    },
+    {
+      "stage": "backbone_finetune",
+      "epoch": 10,
+      "train_loss": 0.164649,
+      "train_accuracy": 0.960714,
+      "validation_loss": 0.588574,
+      "validation_accuracy": 0.816667
+    }
+  ],
+  "confusion_matrix": [
+    [
+      25,
+      3,
+      2,
+      0
+    ],
+    [
+      3,
+      25,
+      1,
+      1
+    ],
+    [
+      4,
+      2,
+      21,
+      3
+    ],
+    [
+      2,
+      0,
+      1,
+      27
+    ]
+  ],
+  "per_class": {
+    "밥": {
+      "precision": 0.7353,
+      "recall": 0.8333,
+      "f1": 0.7812,
+      "support": 30
+    },
+    "국": {
+      "precision": 0.8333,
+      "recall": 0.8333,
+      "f1": 0.8333,
+      "support": 30
+    },
+    "반찬": {
+      "precision": 0.84,
+      "recall": 0.7,
+      "f1": 0.7636,
+      "support": 30
+    },
+    "후식": {
+      "precision": 0.871,
+      "recall": 0.9,
+      "f1": 0.8852,
+      "support": 30
+    }
+  }
+}
